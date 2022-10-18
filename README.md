@@ -2,6 +2,7 @@
 
 
 ## AUTHORS
-[Tivere IDORO](https://github.com/tivereidoro)  and  [Malek KHEMIRI](https://github.com/KHMalek)
+• [Tivere IDORO](https://github.com/tivereidoro)
+• [Malek KHEMIRI](https://github.com/KHMalek)
 ##
 ##
