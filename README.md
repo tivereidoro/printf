@@ -1,8 +1,8 @@
-## printf Pair-Programming Project in C - ALX Software Engineering
+## ALX SOFTWARE ENGINEERING - printf Pair-Programming Project in C
 ##
 
 ### printf
-> This is a group project with two memmbers workng on it. We are creating a mini-version of the normal "printf" function found in the <stdio.h> Library. The version that we will create will work the same way as the normal "printf", in that it will allow us to print any argument given to the standard output, that will include printing any combination of strings, integers, characters, among other different datatypes.
+> This is a mini-version of the normal "printf" function found in the <stdio.h> library. It allows formatting and printing of any argument given to the standard output, including printing any combination of strings, integers, characters, and other different datatypes.
 
 
 ### GOALS
@@ -22,27 +22,19 @@
 
 * Operating System: Ubuntu 20.04 LTS
 * compiler: GCC using the flags -Wall -Werror -Wextra and -pedantic
-$ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c
+`$ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c`
 * coding style: [Betty Style](https://github.com/holbertonschool/Betty/blob/master/betty-style.pl)
 
 
 ### BREAKDOWN OF TASKS
-| Task # |  Type   |                Description |
-| :---   |   :---: |                      :--- |
-|0       | **Mandatory**| Write a function that produces output accordint to a format |
-|1       | **Mandatory**| Handle the following conversion specifiers: d i |
-|2 |**Mandatory** | Create a `man page` for your function|
-|3 | *Advanced*| Handle the following custom conversion specifiers: `b` the unsiged int argumment is converted to binary|
-|4 |*Advanced*| Handle conversion specifiers `u, o x, X`|
-|5| | |
-|6| *Advanced*| Handle conversion specifier `p`|
-|7| *Advanced*| Handle custom conversion specifier, `S`|
-|8| *Advanced*| |
-|9| *Advanced*| |
-|10| *Advanced*| |
-|11| *Advanced*| |
-|12| *Advanced*| |
-|13| *Advanced*| |
+* Write a function that produces output according to a format.
+* Handle these conversion specifiers: d and i.
+* Create a `man page` for the function.
+* Handle these custom conversion specifiers: `b` : the unsiged int argumment is converted to binary.
+* Handle conversion specifiers `u, o x, X`
+* Handle conversion specifier `p`
+* Handle custom conversion specifier, `S`
+
 
 ### FILES DESCRIPTION:
 1. **base_change** Converts decimal int to octal and hex
@@ -57,7 +49,6 @@ $ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c
 
 
 ## AUTHORS
-* •[Tivere IDORO](https://github.com/tivereidoro) <br>
-* •[Malek KHEMIRI](https://github.com/KHMalek)
-##
+* [Tivere IDORO](https://github.com/tivereidoro)
+* [Malek KHEMIRI](https://github.com/KHMalek)
 ##
