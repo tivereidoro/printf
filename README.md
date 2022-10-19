@@ -2,13 +2,13 @@
 ##
 
 ### printf
-> This is a mini-version of the normal "printf" function found in the <stdio.h> library. It allows formatting and printing of any argument given to the standard output, including printing any combination of strings, integers, characters, and other different datatypes.
+> This is a mini-version of the normal `printf()` function found in the `<stdio.h>` library. It allows formatting and printing of any argument given to the standard output, including printing any combination of strings, integers, characters, and other different datatypes.
 
 
 ### GOALS
-* Implement custom printf() function similar to the one in the standard library
+* Implement custom `printf()` function similar to the one in the standard library
 * Use Variadic functions to allow a varying number of arguments to be passed to the function
-* Parse a format string to identify the print options
+* Parse format string to identify the print options
 
 #### Handle the following conversion specifiers:
 * c - char
