@@ -22,7 +22,7 @@
 
 * Operating System: Ubuntu 20.04 LTS
 * compiler: GCC using the flags -Wall -Werror -Wextra and -pedantic <br>
-\t `$ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c`
+`$ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c`
 * coding style: [Betty Style](https://github.com/holbertonschool/Betty/blob/master/betty-style.pl)
 
 
