@@ -35,18 +35,7 @@
 * Handle conversion specifier `p`
 * Handle custom conversion specifier, `S`
 
-
-### FILES DESCRIPTION:
-1. **base_change** converts decimal int to octal and hex.
-2. **binary.c** converts unsigned integer to binary.
-3. **main.h** contains function prototypes and global variable definitions.
-4. **integers.c** prints integers.
-5. **man_3_printf** contains the description of the function _printf.
-6. **numbers.c** functions to print unsigned int.
-7. **parse_args** - contains a function that iterates through the main string to print a formatted string
-8. **handle custom conversion specifier `S`. prints the string and Non printable characters (0 < ASCII value < 32 or >= 127) are printed this way: \x, followed by the ASCII code value in hexadecimal (upper case - always 2 characters).
-9. **_printf.c** is the caller function that prints formatted string from the main string and other variable arguments.
-
+<br>
 
 ## AUTHORS
 * [Tivere IDORO](https://github.com/tivereidoro)
