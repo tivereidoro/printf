@@ -21,8 +21,8 @@
 ### REQUIREMENTS
 
 * Operating System: Ubuntu 20.04 LTS
-* compiler: GCC using the flags -Wall -Werror -Wextra and -pedantic
-`$ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c`
+* compiler: GCC using the flags -Wall -Werror -Wextra and -pedantic <br>
+\t `$ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c`
 * coding style: [Betty Style](https://github.com/holbertonschool/Betty/blob/master/betty-style.pl)
 
 
@@ -37,15 +37,15 @@
 
 
 ### FILES DESCRIPTION:
-1. **base_change** Converts decimal int to octal and hex
-2. **binary.c** Converts unsigned integer to binary
-3. **main.h** Contains function prototypes and global variable definitions
-4. **integers.c** Prints integers
-5. **man_3_printf** Contains the description of the function _printf
-6. **numbers.c** Functions to print unsigned int
-7. **parse_args** - Contains a function that iterates through the main string to print a formatted string
-8. **Handles  custom conversion specifier `S`. Prints the string and Non printable characters (0 < ASCII value < 32 or >= 127) are printed this way: \x, followed by the ASCII code value in hexadecimal (upper case - always 2 characters)
-9. **_printf.c** Caller function that prints formatted string from the main string and other variable arguments
+1. **base_change** converts decimal int to octal and hex.
+2. **binary.c** converts unsigned integer to binary.
+3. **main.h** contains function prototypes and global variable definitions.
+4. **integers.c** prints integers.
+5. **man_3_printf** contains the description of the function _printf.
+6. **numbers.c** functions to print unsigned int.
+7. **parse_args** - contains a function that iterates through the main string to print a formatted string
+8. **handle custom conversion specifier `S`. prints the string and Non printable characters (0 < ASCII value < 32 or >= 127) are printed this way: \x, followed by the ASCII code value in hexadecimal (upper case - always 2 characters).
+9. **_printf.c** is the caller function that prints formatted string from the main string and other variable arguments.
 
 
 ## AUTHORS
