@@ -5,7 +5,9 @@
  * a flag modifier in the format string
  * @s: character that holds the flag specifier
  * @f: pointer to the struct flags in which we turn the flags on
+ *
  * Return: 1 if a flag has been turned on, 0 otherwise
+ * Authors: Ehoneah Obed & Abdulhakeem Badejo
  */
 int get_flag(char s, flags_t *f)
 {
@@ -26,5 +28,6 @@ int get_flag(char s, flags_t *f)
 			i = 1;
 			break;
 	}
+
 	return (i);
 }

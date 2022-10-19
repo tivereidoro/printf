@@ -4,7 +4,10 @@
 /**
  * _putchar - writes the character c to stdout
  * @c: The character to print
- * Return: 1 (Success)
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
+ * Description: _putchar uses a local buffer of 1024 to call write
+ * as little as possible
  */
 int _putchar(char c)
 {
@@ -25,9 +28,9 @@ int _putchar(char c)
 }
 
 /**
- * _puts -  writes a string to stdout
- * @str: The string to print
- * Return: 1 (Success)
+ * _puts - prints a string to stdout
+ * @str: pointer to the string to print
+ * Return: number of chars written
  */
 int _puts(char *str)
 {

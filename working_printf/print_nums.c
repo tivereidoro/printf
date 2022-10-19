@@ -22,6 +22,21 @@ int print_int(va_list l, flags_t *f)
 	return (res);
 }
 
+/**
+ * print_unsigned - prints an unsigned integer
+ * @l: va_list of arguments from _printf
+ * @f: pointer to the struct flags determining
+ * if a flag is passed to _printf
+ * Return: number of char printed
+ */
+int print_unsigned(va_list l, flags_t *f)
+{
+	unsigned int u = va_arg(l, unsigned int);
+	char *str = convert(u, 10, 0);
+
+	(void)f;
+	return (_puts(str));
+}
 
 /**
  * print_number - helper function that loops through
@@ -39,12 +54,11 @@ void print_number(int n)
 	}
 	else
 		n1 = n;
+
 	if (n1 / 10)
 		print_number(n1 / 10);
 	_putchar((n1 % 10) + '0');
 }
-
-
 
 /**
  * count_digit - returns the number of digits in an integer
