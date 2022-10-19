@@ -1,60 +1,49 @@
 #ifndef MAIN_H
 #define MAIN_H
+#define _PRINTF_H
 
+#include <unistd.h>
 #include <stdlib.h>
 #include <stdarg.h>
+#include <stdio.h>
 
 /**
- * struct flags - struct containing flags to "turn on"
- * when a flag specifier is passed to _printf()
- * @plus: flag for the '+' character
- * @space: flag for the ' ' character
- * @hash: flag for the '#' character
- */
-typedef struct flags
+  * struct type_spec - structure for symbols and functions
+  *
+  * @t: Characters
+  * @fn: respective functions
+  */
+struct type_spec
 {
-	int plus;
-	int space;
-	int hash;
-} flags_t;
+	char *t;
+	int (*fn)(va_list);
+};
+typedef struct type_spec spec_t;
 
-
-/**
- * struct printHandler - struct to choose the right function depending
- * on the format specifier passed to _printf()
- * @c: format specifier
- * @f: pointer to the correct printing function
- */
-typedef struct printHandler
-{
-	char c;
-	int (*f)(va_list ap, flags_t *f);
-} ph;
-
-
-/* _printf */
-int _printf(const char *format, ...);
-
-/* get_flag */
-int get_flag(char s, flags_t *f);
-
-/* get_print */
-int (*get_print(char s))(va_list, flags_t *);
-
-/* write_funcs */
+/* Function prototypes*/
+int print_binary(va_list list);
+int print_octal(va_list list);
+int print_hex(va_list list);
+int print_heX(va_list list);
+int hex_check(int num, char x);
+char *rev_str(char *s);
+int rot13(va_list list);
+void _base(char *str);
+unsigned int base_len(unsigned int num, int base);
+char *_memcpy(char *dest, char *src, unsigned int n);
+int print_reversed(va_list arg);
+int parse_args(const char *format, spec_t fun_list[], va_list arg_list);
+int print_number(va_list args);
+int print_unsgined_number(unsigned int n);
+int print_char(va_list list);
+int print_string(va_list list);
+int print_percent(__attribute__((unused))va_list list);
+int print_integer(va_list list);
+int unsigned_integer(va_list list);
 int _putchar(char c);
-int _puts(char *str);
-
-/* print_functions */
-int print_string(va_list l, flags_t *f);
-int print_char(va_list l, flags_t *f);
-int print_percent(va_list l, flags_t *f);
-
-/* print_nums */
-int print_int(va_list l, flags_t *f);
-void print_number(int n);
-int print_unsigned(va_list l, flags_t *f);
-int count_digit(int i);
+int _printf(const char *format, ...);
+int print_custom(va_list list);
+int print_pointer(va_list list);
 
 
-#endif
+#endif /*MAIN_H*/
