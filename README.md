@@ -34,7 +34,6 @@
 * Handle conversion specifiers `u, o x, X`
 * Handle conversion specifier `p`
 * Handle custom conversion specifier, `S`
-
 <br>
 
 ## AUTHORS
